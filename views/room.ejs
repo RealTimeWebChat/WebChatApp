@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <script>
         const ROOM_ID = "<%= roomId %>"
     </script>
@@ -27,6 +27,23 @@
 </style>
 </head>
 <body>
+    <p>Avatar based Video Chat Web Application.</p>
+    <p><button id="btnStart">START RECORDING</button><br/>
+        <button id="btnStop">STOP RECORDING</button></p>
+
+        <button id="btnUpload">UPLOAD RECORDING</button></p>
+
+    <p><div id="avatar">http://127.0.0.1:8000/</div></p>
+
     <div id="video-grid"></div>
+    <video id="vid2" controls></video>
+    
+    <!--new 19/october-->
+    <input type="checkbox" id="audioToggle" />
+    <label for="audioToggle">Capture Audio-Video from Desktop</label>
+    <input type="checkbox" id="micAudioToggle" />
+    <label for="micAudioToggle">Capture Audio from Microphone</label>
+    <!--new 19/october-->
+
 </body>
 </html>
